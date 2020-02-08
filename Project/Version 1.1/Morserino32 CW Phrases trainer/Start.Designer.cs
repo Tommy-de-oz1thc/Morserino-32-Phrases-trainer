@@ -531,9 +531,9 @@
             this.checkVoice.AutoSize = true;
             this.checkVoice.Location = new System.Drawing.Point(689, 243);
             this.checkVoice.Name = "checkVoice";
-            this.checkVoice.Size = new System.Drawing.Size(75, 17);
+            this.checkVoice.Size = new System.Drawing.Size(76, 17);
             this.checkVoice.TabIndex = 45;
-            this.checkVoice.Text = "Add Voice";
+            this.checkVoice.Text = "Add Noice";
             this.checkVoice.UseVisualStyleBackColor = true;
             this.checkVoice.CheckedChanged += new System.EventHandler(this.checkVoice_CheckedChanged);
             // 
