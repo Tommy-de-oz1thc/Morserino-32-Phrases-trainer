@@ -38,7 +38,8 @@ namespace Morserino32_CW_Phrases_trainer
         private MorseGenerator agen = new MorseGenerator();
         private int Farnsworth_Words;
         private int Farnsworth_Letters;
-       
+        private bool voice = false;
+
         public Start()
         {
             InitializeComponent();
@@ -339,7 +340,17 @@ namespace Morserino32_CW_Phrases_trainer
             }
         }
 
-       
+        private void checkVoice_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkVoice.Checked)
+            {
+                MorseProvider.Set_Voice(true);
+            }
+            else
+            {
+                MorseProvider.Set_Voice(false);
+            }
+        }
 
         private void Next_Phrases()
         {

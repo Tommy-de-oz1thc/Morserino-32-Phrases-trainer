@@ -71,6 +71,7 @@
             this.numFarnsworth_Letters = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
             this.comboPort = new System.Windows.Forms.ComboBox();
+            this.checkVoice = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numWPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPitch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTimer)).BeginInit();
@@ -514,7 +515,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(424, 13);
             this.label20.TabIndex = 43;
-            this.label20.Text = "Version: 1.0 ~ Last Update: 04-02-2020             @ Tommy Clemmensen Jo55jh Denm" +
+            this.label20.Text = "Version: 1.1 ~ Last Update: 08-02-2020             @ Tommy Clemmensen Jo55jh Denm" +
     "ark";
             // 
             // comboPort
@@ -525,11 +526,23 @@
             this.comboPort.Size = new System.Drawing.Size(118, 21);
             this.comboPort.TabIndex = 44;
             // 
+            // checkVoice
+            // 
+            this.checkVoice.AutoSize = true;
+            this.checkVoice.Location = new System.Drawing.Point(689, 243);
+            this.checkVoice.Name = "checkVoice";
+            this.checkVoice.Size = new System.Drawing.Size(75, 17);
+            this.checkVoice.TabIndex = 45;
+            this.checkVoice.Text = "Add Voice";
+            this.checkVoice.UseVisualStyleBackColor = true;
+            this.checkVoice.CheckedChanged += new System.EventHandler(this.checkVoice_CheckedChanged);
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkVoice);
             this.Controls.Add(this.comboPort);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.numFarnsworth_Letters);
@@ -632,6 +645,7 @@
         private System.Windows.Forms.NumericUpDown numFarnsworth_Letters;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox comboPort;
+        private System.Windows.Forms.CheckBox checkVoice;
     }
 }
 
