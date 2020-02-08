@@ -15,6 +15,8 @@ namespace MorseGen
         private int dotsamples, dashsamples, spacesamples, sinesamples, pitch, ipos = 0;
         private static int Farnsworth_Words = 0;
         private static int Farnsworth_Letters = 0;
+        private static bool add_voice = false;
+        Random rand = new Random();
         public MorseProvider()
         {
             wbuffer = new float[0];
@@ -372,19 +374,28 @@ namespace MorseGen
                 buf.Add(0);
            
         }
-
+       
         private void AddSine(List<float> buf, int samples)
         {
             int si = 0;
             float attack = 0.05f;
             for (int i = 0; i < samples; i++)
-            {
-                buf.Add((float)(attack * volume * Math.Sin((2 * Math.PI * si * pitch) / WaveFormat.SampleRate)));
+            { int voice = 1;
+                if (add_voice)
+                {
+                    voice = rand.Next(10, 550);
+                }
+                buf.Add((float)(attack * volume * voice* Math.Sin((2 * Math.PI * si * pitch)  / WaveFormat.SampleRate)));
                 si++;
                 if (i > samples - 20 && attack > 0) attack -= 0.05f;
                 else if (attack < 1) attack += 0.05f;
                 if (si >= WaveFormat.SampleRate) si = 0;
             }
+        }
+
+        public static void Set_Voice(bool voice)
+        {
+            add_voice = voice;
         }
     }
 }
