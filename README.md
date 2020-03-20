@@ -18,7 +18,6 @@ Neall w5ned is right now writing on a documentation on how it work.
 But some of the new feature Neall had added is a 1 letter show and 1 word delete and <ar> for repeat the sound and sent phrases.
 He had also change the txt so the program can use both = as end and be without that help a lot with small phrases.
 
-Tommy de oz1thc
 
 The MorseGen sound class is created by oz8agb, but the rest of the program I havde code my self.
 
