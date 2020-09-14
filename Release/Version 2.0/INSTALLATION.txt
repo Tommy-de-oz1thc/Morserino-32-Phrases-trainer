@@ -1,0 +1,79 @@
+
+This is a more convenient, versatile way to do ECHO TRAINING on the Morserino32
+in conjunction with your Windows PC.
+
+It's best to ensure your Morserino has the LATEST firmware installed.
+ 
+Words and phrases are selected and played from the computer.  
+Replies are keyed in from your Morsrino at any speed you'd like.   
+Nothing is downloaded into your Morserino in order to do echo training this way.
+Files to play are easily added to your PC and selected from the
+phrases program to do training.
+
+The training works best using the built-in or external iambic dual-paddle key.
+The program WILL work with a straght key.  See step 7) below.
+
+Here are a few simple steps to installing and using the Phrases Trainer program: 
+This version is MS Windows only...
+
+1)  If you have never had a ham radio connected to your PC via USB, you'll need to install
+    the Virtual Serial Port Driver.  This can be found at:
+    https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+
+    Install this before connecting the Morserino32 hardware to your PC, 
+    and before installing thePC Phrases Trainer Program.
+
+2)  Acquire the latest version of the Morserino32 Phrases Trainer Program.
+    https://github.com/Tommy-de-oz1thc/Morserino-32-Phrases-trainer/tree/Morserino/Release/Version%202.0
+
+3)  On your Morserino32, double click  the black button to get to the master
+    configuration menu, and set "Serial Output" to "Keyer."
+
+4)  Attach your Morserino32 to your PC via a USB cable.
+
+5)  Invoke your PC's device manager application (using search bar),
+    and under "Ports (COM and LPT)", note the COM Port associated with the Silicon Labs driver.
+    Right-click on the driver and select "Properties."  You will need to set the "bits per second"
+    under "Port Settings" tab to 115200 bits per second.  
+    You only need to do this once.
+
+6)  The PC Phrases Trainer program is pretty self explanatory.  
+    With your Morserino32 hardware plugged into the USB port, click on the .exe program that
+    you downloaded.  Sound from the program is origniates from  the PC speaker. 
+    Your reply from the Morserino sound from the Morserino speaker.   
+    All word and phrase files are selected on the PC from the Phrases program.  
+    There is nothing downloaded to the Morserino.  
+    The Morserino does NOT need or use Wifi connectivity.
+
+***  HOW TO USE THE PROGRAM ***
+
+7)  Within the program, click "Check" in the upper right corner and
+    select the COM port associated with the trainer (from step 5).  
+    Click "Connect" button. 
+    On your Morserino32, select the Modus "CW Keyer" for IAMBIC PADDLE mode.
+    Otherwise, select the Modus "CW Decoder" for STRAIGHT KEY mode.
+
+8)  Within the Phrases Trainer Program, click the "Check" button next to "Lessons" 
+    and select a lesson using the pull-down menu.  These are the lessons from within 
+    the Phrase directory you downloaded.  Then click "Load Lesson" button.
+
+9)  Click "Start" button to begin using the program.   Phrases from the lesson will play 
+    at random, and you need to key in the phrase in response.
+    Your Morserino32 keyer speed for sending Morse is independent of the speed phrases
+    are played within the Phrases program.  You can listen to phrases at a different speed than
+    you send back from the Morserino.  Phrases sending speed is selected within the program. 
+    Your reply speed is set in the Morserino.
+
+    Sending commands from the Morserino is simple, as follows:
+       a)  Backspace a word by sending six DITS. 
+       b)  Erase your input and replay the phrase in Morse by keying in <AR>
+       c)  Complete entry of your phrase for checking by sending <BT>
+
+    You can put any text files you'd like into the Phrases directory on the PC. 
+    Then, just select them and play them.
+
+10) ENJOY!
+
+11) Email me at w5ned@arrl.net with questions, concerns or feedback.
+
+73, Neall Doren W5NED
