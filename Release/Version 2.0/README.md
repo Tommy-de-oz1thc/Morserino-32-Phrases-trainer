@@ -7,4 +7,4 @@ Simply unzip and read INSTALLATION file for further instructions.
 Tommy de oz1thc
 
 Neall W5NED
--- w5ned@arrl.net
+-- neall@haughtmail.com
